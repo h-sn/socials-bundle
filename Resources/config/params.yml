@@ -1,0 +1,24 @@
+parameters:
+    twig:
+        globals:
+            facebook:
+                url: 		null
+                locale: 	en_EN
+                send: 		false
+                width:		300
+                showFaces: 	false
+                share:      true
+                layout: 	button_count
+            twitter:
+                url:		null
+                locale:		en
+                message:	Twitter message
+                text:		Tweet
+                via:		Via secl.com.ua
+                tag:		ttot
+            google_plus:
+                url: 		null
+                locale : 	en
+                size : 		medium
+                annotation : bubble
+                width : 	300

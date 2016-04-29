@@ -1,0 +1,37 @@
+{
+    "name" : "h-sn/socials-bundle",
+    "type" : "symfony-bundle",
+    "description" : "A bundle to easily add facebook, twitter, G+, Linkedin buttons to your templates",
+    "authors" : [{
+        "name" :    "Yann Chauvel",
+        "email" :   "yann@secl.net",
+        "homepage": "http://www.secl.net/"
+    }],
+    "keywords" : [
+        "symfony", "symfony2", "symfony2bundle", "bundle", 
+        "social","buttons", 
+        "like", "share", 
+        "facebook", "twitter", "linkedin", "google plus"
+    ],
+    "homepage": "http://github.com/h-sn/SeclSocialButtonsBundle",
+    "license" : "MIT",
+    "require" : {
+        "php":       ">=5.3.2",
+        "twig/twig": "*"
+    },
+    "require-dev" : {
+        "matthiasnoback/symfony-config-test":   "0.*",
+        "symfony/framework-bundle":             ">=2.1"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Secl\\SocialsBundle\\":   ""
+        }
+    },
+    "target-dir" : "Secl/SocialsBundle",
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "1.0-dev"
+        }
+    }
+}

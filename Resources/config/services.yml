@@ -1,0 +1,24 @@
+services:
+    secl.socialBarHelper:
+        class : Secl\SocialsBundle\Helpers\SocialBarHelper
+        tags :
+            - {name : 'templating.helper', alias : 'social-buttons'}
+        arguments : [ "@templating" ]
+
+    twig.extension.secl_social_bar:
+        class: Secl\SocialsBundle\Twig\Extension\SeclTwigSocialBar
+        tags:
+            - { name: 'twig.extension' }
+        arguments : [ "@service_container" ]
+
+    secl.socialLinksHelper:
+        class : Secl\SocialsBundle\Helpers\SocialLinksHelper
+        tags :
+            - {name : 'templating.helper', alias : 'social-links'}
+        arguments : [ "@templating" ]
+
+    twig.extension.secl_social_links:
+        class: Secl\SocialsBundle\Twig\Extension\SeclTwigSocialLinks
+        tags:
+            - { name: 'twig.extension' }
+        arguments : [ "@service_container" ]
